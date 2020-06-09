@@ -3,8 +3,11 @@ increasing or decreasing parameters mentioned in answer for question 2, "process
 
 2. What were the 2-3 most efficient SparkSession property key/value pairs? Through testing multiple variations on values, how can you tell these were the most optimal? 
 Following three parameters are key.
+
 spark.sql.shuffle.partitions                10
+
 spark.streaming.kafka.maxRatePerPartition   10
+
 spark.default.parallelism                   10000
 
 Achieved upto 3.73 processedRowsPerSecond as shown bellow
